@@ -8,8 +8,11 @@
 
 (color-theme-zenburn)
 
+;;; Need to require slime here, otherwise we get the following error
+;;; Warning (initialization): An error occurred while loading `/home/jad/.emacs.d/init.elc':
+;;;
+;;; Symbol's value as variable is void: slime-lisp-implementations
 (require 'slime)
-(slime-setup)
 
 (add-to-list 'slime-lisp-implementations '(clbuild ("/home/jad/repos/external/darcs/clbuild/clbuild" "lisp")))
 (add-to-list 'slime-lisp-implementations '(sbcl ("sbcl")))
