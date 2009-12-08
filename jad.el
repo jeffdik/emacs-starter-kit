@@ -25,3 +25,6 @@
 (add-hook 'c-mode-hook
           (lambda ()
             (setq c-basic-offset 8)))
+
+(add-to-list 'load-path (concat dotfiles-dir "/elisp"))
+(autoload 'svn-status "psvn" "Load PSVN" t)
