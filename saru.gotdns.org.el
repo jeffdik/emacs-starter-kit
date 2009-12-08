@@ -18,3 +18,6 @@
 (add-to-list 'slime-lisp-implementations '(sbcl ("sbcl")))
 
 (setq slime-backend "/home/jad/repos/external/darcs/clbuild/jad-swank-loader.lisp")
+
+(eval-after-load 'erc
+  (load "jad-erc-auth.el"))
