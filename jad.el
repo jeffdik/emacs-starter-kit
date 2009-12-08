@@ -7,6 +7,8 @@
 (load "jad-org.el")
 
 ;;; csharp mode
+(add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
+(add-to-list 'auto-mode-alist '("\\.asmx$" . csharp-mode))
 (defun my-csharp-mode-hook ()
   (setq c-basic-offset 4))
 (add-hook 'csharp-mode-hook 'my-csharp-mode-hook)
