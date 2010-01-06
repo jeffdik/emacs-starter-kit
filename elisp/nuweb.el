@@ -154,7 +154,7 @@
 ;;;
 (require 'cl)
 
-;(defvar AucTeX-used t)
+(defvar AucTeX-used t)
 
 (if AucTeX-used
     (progn
