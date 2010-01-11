@@ -466,6 +466,7 @@ The bindings installed by this minor mode are
 
 (defun nuweb-back-to-pos()
   (setq kill-buffer-hook nil)
+  (set-window-configuration *nuweb-win-config*)
   (switch-to-buffer (marker-buffer *nuweb-last-scrap-pos*))
   (setq buffer-read-only nil)
   (delete-other-windows)
