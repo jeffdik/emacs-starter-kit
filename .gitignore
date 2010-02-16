@@ -20,3 +20,5 @@ tramp
 \#*
 *~
 org-clock-save.el
+jad-erc-auth.el
+server/
