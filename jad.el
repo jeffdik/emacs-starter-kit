@@ -28,3 +28,6 @@
 
 (add-to-list 'load-path (concat dotfiles-dir "/elisp"))
 (autoload 'svn-status "psvn" "Load PSVN" t)
+
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
+(remove-hook 'text-mode-hook 'turn-on-flyspell)
