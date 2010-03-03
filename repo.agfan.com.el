@@ -1,0 +1,1 @@
+(load "work-org.el")
