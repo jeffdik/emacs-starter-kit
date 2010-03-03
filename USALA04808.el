@@ -7,3 +7,5 @@
 
 (add-to-list 'auto-mode-alist '( "\\.w$" . nuweb-mode))
 (autoload 'nuweb-mode "nuweb" "Load nuweb-mode" t)
+
+(load "mswin.el")
