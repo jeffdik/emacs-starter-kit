@@ -36,3 +36,5 @@
 ;;; objective-j mode
 ;;; from http://github.com/280north/cappuccino/tree/2571b24f222c863afbe5778079da3dd9c10becb1/Tools/Editors/Emacs
 (require 'objj-mode)
+
+(load "js2")
