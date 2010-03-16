@@ -10,7 +10,8 @@
 (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
 (add-to-list 'auto-mode-alist '("\\.asmx$" . csharp-mode))
 (defun my-csharp-mode-hook ()
-  (setq c-basic-offset 4))
+  (setq c-basic-offset 4)
+  (c-set-offset 'arglist-intro '++))
 (add-hook 'csharp-mode-hook 'my-csharp-mode-hook)
 
 ;; Don't indent substatements' '{'
