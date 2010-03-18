@@ -3,5 +3,7 @@
 
 (load "work-org.el")
 
-(add-to-list 'auto-mode-alist '( "\\.w" . nuweb-mode))
+(add-to-list 'auto-mode-alist '( "\\.w$" . nuweb-mode))
 (autoload 'nuweb-mode "nuweb" "Load nuweb-mode" t)
+
+(load "mswin.el")
