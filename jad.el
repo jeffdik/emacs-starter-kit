@@ -35,6 +35,9 @@
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (remove-hook 'coding-hook 'local-comment-auto-fill)
 
+(if (not window-system)
+    (remove-hook 'coding-hook 'pretty-lambdas))
+
 ;;; objective-j mode
 ;;; from http://github.com/280north/cappuccino/tree/2571b24f222c863afbe5778079da3dd9c10becb1/Tools/Editors/Emacs
 (require 'objj-mode)
