@@ -32,3 +32,6 @@
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (remove-hook 'coding-hook 'local-comment-auto-fill)
+
+(if (not window-system)
+    (remove-hook 'coding-hook 'pretty-lambdas))
