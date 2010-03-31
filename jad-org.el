@@ -2,6 +2,9 @@
 ;; (global-set-key "\C-cl" 'org-store-link)
 ;; (global-set-key "\C-ca" 'org-agenda)
 
+(fset 'jad-org-agenda-date-set-to-today
+   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote (">+0" 0 "%d")) arg)))
+
 (setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s!)" "|" "DONE(d!/!)")
 				(sequence "WAITING(w@/!)" "SOMEDAY(S!)" "|" "CANCELLED(c@/!)"))))
 
