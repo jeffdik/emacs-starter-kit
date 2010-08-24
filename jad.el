@@ -11,8 +11,9 @@
 (add-to-list 'auto-mode-alist '("\\.asmx$" . csharp-mode))
 (defun my-csharp-mode-hook ()
   (setq c-basic-offset 4)
-  (c-set-offset 'arglist-intro '++)
-  (c-set-offset 'arglist-cont-nonempty '++))
+  ;; (c-set-offset 'arglist-intro '++)
+  ;; (c-set-offset 'arglist-cont-nonempty '++)
+  )
 (add-hook 'csharp-mode-hook 'my-csharp-mode-hook)
 
 ;; Don't indent substatements' '{'
@@ -43,3 +44,22 @@
 (require 'objj-mode)
 
 (load "js2")
+
+;;; from http://www.emacswiki.org/emacs/InteractivelyDoThings#toc8
+(defun ido-find-file-in-tag-files ()
+  (interactive)
+  (save-excursion
+    (let ((enable-recursive-minibuffers t))
+      (visit-tags-table-buffer))
+    (find-file
+     (expand-file-name
+      (ido-completing-read
+       "Project file: " (tags-table-files) nil t)))))
+
+;;; from http://www.emacswiki.org/emacs/EtagsSelect
+(global-set-key "\M-?" 'etags-select-find-tag-at-point)
+(global-set-key "\M-." 'etags-select-find-tag)
+
+(require 'etags-table)
+
+(require 'slime)
