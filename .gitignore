@@ -19,7 +19,11 @@ elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 session*
 tramp
 \#*
+<<<<<<< HEAD
 *~
 org-clock-save.el
 jad-erc-auth.el
 server/
+=======
+history
+>>>>>>> upstream/master
