@@ -66,3 +66,6 @@
 (require 'etags-table)
 
 (require 'slime)
+
+;; sometimes this speeds things up
+;; (set-variable vc-handled-backends nil)
