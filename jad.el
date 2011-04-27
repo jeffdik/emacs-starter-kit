@@ -97,3 +97,10 @@
 
 ;; sometimes this speeds things up
 ;; (set-variable vc-handled-backends nil)
+
+;; fsharp
+
+(setq load-path (cons "~/.emacs.d/elisp/fsharp" load-path))
+(setq auto-mode-alist (cons '("\\.fs[iylx]?$" . fsharp-mode) auto-mode-alist))
+(autoload 'fsharp-mode "fsharp" "Major mode for editing F# code." t)
+(autoload 'run-fsharp "inf-fsharp" "Run an inferior F# process." t)
