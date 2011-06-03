@@ -4,6 +4,8 @@
 ;; (transient-mark-mode t)
 (server-start)
 
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 (load "jad-org.el")
 
 ;;; csharp mode
