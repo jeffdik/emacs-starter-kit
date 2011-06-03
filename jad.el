@@ -67,8 +67,6 @@
 
 (require 'etags-table)
 
-(require 'slime)
-
 ;;; from https://www.bunkus.org/blog/2009/12/switching-identifier-naming-style-between-camel-case-and-c-style-in-emacs/
 (defun mo-toggle-identifier-naming-style ()
   "Toggles the symbol at point between C-style naming,
